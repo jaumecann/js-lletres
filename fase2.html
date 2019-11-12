@@ -7,16 +7,20 @@
 
 <script>
 
-var nom = ["J","A","U",3,"M","E"];
-var vocals = ["A", "E",, "I", "O", "U"];
+var nom = ["J","A","U", 3,"M","E"];
+var vocals = ["A", "E", "I", "O", "U"];
 for (var i=0; i<nom.length; i++){
       if (vocals.indexOf(nom[i])<0){
           console.log("He trobat la consonant:" + nom[i]);
+      } else if (typeof(nom[i])=="number"){
+          console.log("Els noms de persones no contenen el número:" + nom[i])
       } else {
         console.log("He trobat la vocal:" + nom[i]);
       }
   };
-console.log(vocals[2]);
+
+console.log(typeof(nom[3]));
+console.log(vocals.indexOf(nom[i]));
 
 </script>
 
