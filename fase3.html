@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<script>
+
+
+
+
+var nom = ["J", "A", "U", "M", "E", "C", "A", "N", "A", "L", "S"];
+
+
+
+var counter = {}
+
+nom.map(function(item){
+counter[item] = 0;   
+});
+
+
+for (var i=0; i<nom.length; i++) {
+    if (Object.keys(counter).indexOf(nom[i]) >=0){
+        counter[nom[i]]++;
+    }
+}
+
+console.log(counter);
+
+
+
+/*
+for (var i=0; i<Object.keys(counter).length,i++;){
+    for (var j=0; j<nom.length; j++){
+        if (Object.keys(counter)[i] == nom[j]){
+            counter[Object.keys(counter)[i]]++;
+            console.log (counter);
+        }
+    }
+   
+} 
+*/
+
+</script>
+
+
+
+</html>
